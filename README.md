@@ -1,7 +1,7 @@
 # Event-B Rodin `sum` function
 
 This function allows you to sum sets of integers in Rodin. \
-It is based on verified recursive sum algorithm but auto-prover didn't succeed to prove that. You have to add some more constraints to get it proved automatically or prove it manually.
+It is based on verified recursive sum algorithm and it gets directly proven by using [SMT Solvers Plug-in](http://wiki.event-b.org/index.php/SMT_Solvers_Plug-in)
 
 This can also be used as an inspiration to do some more advanced things with Event-B Rodin.
 
@@ -19,7 +19,7 @@ sum -- sum  -- Sum of elements of set \
 | __Description__ | sum(S) is an expression that gives the sum of each element in  the given set. it is only defined for finite sets.|
 |__Definition__ | sum(S) = s_1 + s_2 + ... + s_n where s_n are integers elements of S.
 |__Types__ | sum(S) is an integer (:INT -or Z-) with S being a POW(Z) (powerset of integers)
-|__WD__ | undefined
+|__WD__ | ?
 
 ## Compatibility
 

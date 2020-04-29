@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="sum" org.eventb.core.type="ℙ(ℙ(ℤ)×ℤ)"/>
+<org.eventb.core.poPredicate name="sun" org.eventb.core.predicate="sum∈ℙ(ℤ) → ℤ∧sum=(λx⦂ℙ(ℤ)·x=(∅ ⦂ ℙ(ℤ)) ∣ 0)∪(λx⦂ℙ(ℤ)·x∈ℙ1(ℤ)∧finite(x) ∣ max(x)+sum(x ∖ {max(x)}))" org.eventb.core.source="/sumFunction/sum_ctx.buc|org.eventb.core.contextFile#sum_ctx|org.eventb.core.axiom#_fTxjoYcpEeqNjdOIA2HjDA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="total" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="var1" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTsum_ct{" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="total'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="var1'" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPsum_ct{" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTIDENTsum_ct{" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poSequent name="evt1/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTALLHYPsum_ct\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="var1∈dom(sum)∧sum∈ℙ(ℤ) ⇸ ℤ" org.eventb.core.source="/sumFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/sumFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.event#,|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTALLHYPsum_ct\|"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTsum_ct|" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="total'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPsum_ct|" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#EVTIDENTsum_ct\|" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/sumFunction/test.bpo|org.eventb.core.poFile#test|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="var1∈ℙ(ℤ)" org.eventb.core.source="/sumFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="total∈ℤ" org.eventb.core.source="/sumFunction/test.bum|org.eventb.core.machineFile#test|org.eventb.core.invariant#+"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,7 +1,7 @@
 # Event-B Rodin `sum` function
 
 This function allows you to sum sets of integers in Rodin. \
-It is based on verified recursive sum algorithm I can't get it proven.
+It is based on verified recursive sum algorithm and proven automatically in Rodin with ProB.
 
 This can also be used as an inspiration to do some more advanced things with Event-B Rodin.
 
@@ -10,6 +10,7 @@ This can also be used as an inspiration to do some more advanced things with Eve
 Simply imports the files from /sumFunction into your project and add `sum_ctx` to the clause `SEES` of the machine in which you need it.
 
 You can then use the function as any other function: `sum(S)`
+For animations, you can mute the first line `sum : POW(INT) --> INT &` into the comment if you don't want to see an error.
 
 ## Rodin's style reference
 sum -- sum  -- Sum of elements of set \
